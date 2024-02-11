@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    height: 80px;
+}
+header nav .logo{
+    width: 150px;
+}
+header nav .menu{
+    display: flex;
+    align-items: center;
+}
+nav .menu a{
+    color: #fff;
+    margin-left: 30px;
+    position: relative;
+    border-radius: 50px;
+}
+nav .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+nav .menu a:hover::after{
+    width: 100%;
+    border-radius: 50px;
+}
+
+nav .menu .dropdown{
+    margin-left : 30px;
+    border-radius: 50px;
+}
+
+.dropdown-content a{
+    margin-left : 10px !important;
+    border-radius: 50px;
+}
+
+nav .social a i{
+    color: #fff;
+    font-size: 22px;
+    margin-left:30px;
+    transition: 0.3s;
+}
+nav .social a i:hover{
+    transform: scale(1.3);
+    color: #dd0707;
+}
+nav .LoginandRegister a i{
+    color: #fff;
+    font-size: 22px;
+    margin-right:60px;
+    float: right !important;
+    transition: 0.3s;
+}
+
+nav .register{
+    margin-left:10%;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(luca-david-HjXbVnnITvE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .text{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+.hero .text h4{
+    font-size: 40px;
+    color: #fffefe;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.hero .text h1{
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 30px;
+}
+.hero .text h1 span{
+    color: #f3d302ba;
+    font-size: 80px;
+    font-weight: bold;
+}
+.hero .text p{
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.hero .text .button{
+    padding: 10px 30px;
+    background-color: #dd0707;
+    text-transform: uppercase;
+    text-emphasis-color: #4e0000;
+    border: 3px groove #b4aa64ba solid;
+    border-radius: 50px 50px;
+    transition: 0.3s;
+}
+
+.hero .text .btn:hover{
+    background-color: transparent;
+    border-radius: 50px 50px 50;
+
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+:root {
+    --x: 0;
+    --y: 0;
+    --xp: 0;
+    --yp: 0;
+      --hue: calc(0 + (var(--xp) * 500));
+      --bg: hsl(0 0% 10%);
+      --size: 100px;
+      --glow: radial-gradient(
+              50% 50% at center,
+              hsl(var(--hue) 80% 85%),
+              hsl(var(--hue) 80% 70%),
+              transparent
+          )
+          calc((var(--x) * 1px) - (var(--size) * 0.5))
+          calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
+  }
+  
+  .controls {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .btn {
+      border-radius: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.1ch;
+      background: var(--bg);
+      border: 4px solid transparent;
+      box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+      cursor: pointer;
+      background:
+          linear-gradient(var(--bg), var(--bg)) padding-box,
+          var(--glow),
+          linear-gradient(black, black) border-box;
+      transition: background-size 0.24s;
+    touch-action: none;
+    position: relative;
+      padding: 1rem 2rem;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+    background: var(--bg);
+    z-index: 2;
+      border-radius: 1rem;
+  }
+  
+ 
+.carousel { 
+    margin: auto;
+    border-radius: 50px;
+    position: relative; 
+    width: 270px; 
+    height: 160px; 
+    overflow: hidden; 
+    background-color: #cdcdcd; 
+    margin-bottom: 10px;
+} 
+  
+.carousel-item .slide-image { 
+    width: 270px; 
+    height: 160px; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border-radius: 50px;
+} 
+  
+.carousel-item { 
+    position: absolute; 
+    width: 100%; 
+    height: 270px; 
+    border: none; 
+    top: 0; 
+    left: 100%; 
+} 
+  
+.carousel-item.active { 
+    left: 0; 
+    transition: all 0.3s ease-out; 
+} 
+  
+.carousel-item div { 
+    height: 100%; 
+} 
+  
+.red { 
+    background-color: red; 
+} 
+  
+.green { 
+    background-color: green; 
+} 
+  
+.yellow { 
+    background-color: yellow; 
+} 
+  
+.violet { 
+    background-color: violet; 
+}
+
+.btn span {
+    background: var(--glow), black;
+    background-clip: text;
+    color: transparent;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  inset: 0;
+}
+
+:root:has(button:active) {
+    --size: 300px;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  filter: blur(20px);
+  border: 4px solid transparent;
+  background: var(--glow);
+  border-radius: 1rem;
+}

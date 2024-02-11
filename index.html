@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Regal||Vintage</title>
+	<!--link for font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!--link for css file--> 
+	<!--link forlogin-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.navbar {
+		  overflow: hidden;
+		  background-color: #000000;
+		}
+		
+		.navbar a {
+		  float: left;
+		  font-size: 16px;
+		  margin: auto;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration:dashed;
+		}
+		
+		.dropdown {
+		  float: left;
+		  overflow: hidden;
+		}
+		
+		.dropdown .dropbtn {
+		  font-size: 16px;  
+		  border:transparent;
+		  outline: none;
+		  color: white;
+		  padding: 5px 6px;
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
+		
+		.navbar a:hover, .dropdown:hover .dropbtn {
+		  background-color: red;
+		}
+		
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #000000;
+		  min-width: 160px;
+		  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+		
+		.dropdown-content a:hover {
+		  background-color: #983333;
+		}
+		
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<img src="car-logo.png"class="logo"alt="">
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Variant</a>
+				<a href="#">Service</a>
+				<a href="#">Gallery</a>													
+				<div class="dropdown">
+						<button class="dropbtn">Package 
+						  <i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+						  <a href="#">India</a>
+						  <a href="#">United state</a>
+						  <a href="#">France</a>
+						  <a href="#">Germany</a>
+						</div>
+					  </div> 
+						<a href="#">Contact</a>
+				</div>
+			<div class="social">
+				<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+				<a href=""><i class="fa-brands fa-twitter"></i></a>
+				<a href=""><i class="fa-brands fa-instagram"></i></a>				
+			</div>	
+			<div class="menu register">
+				<a href=""><i class="fa-solid fa-user fa-beat-fade"></i></a>
+				<a href=""><i class="fa-solid fa-user-plus fa-beat"></i></>					
+			</div>
+		</nav>
+	</header>
+	<div class="hero">
+		<div class="text">			
+			<h4>Powerful, Fun and</h4>
+			<h1>Fierce to <br> <span>Drive</span></h1>
+			<p>The only thing matters is whose behind the Wheel</p>
+			<div class="carousel"> 
+				<div class="carousel-item"> 
+					<div class="slide-image"
+						style="background-image:  
+		url('https://c4.wallpaperflare.com/wallpaper/404/19/616/dark-car-vehicle-ford-wallpaper-preview.jpg');"> 
+					</div> 
+				</div> 
+				<div class="carousel-item"> 
+					<div class="slide-image"
+						style="background-image:  
+		url('https://c4.wallpaperflare.com/wallpaper/822/301/267/1969-ford-mustang-fastback-john-wick-boss-429-hd-wallpaper-preview.jpg');"> 
+					</div> 
+				</div> 
+				<div class="carousel-item"> 
+					<div class="slide-image"
+						style="background-image:  
+		url('https://c4.wallpaperflare.com/wallpaper/621/849/256/ford-mustang-boss-302-1970-wallpaper-preview.jpg');"> 
+					</div> 
+				</div> 
+				<div class="carousel-item"> 
+					<div class="slide-image"
+						style="background-image:  
+		url('https://c4.wallpaperflare.com/wallpaper/582/521/223/ford-mustang-car-muscle-cars-wallpaper-preview.jpg');"> 
+					</div> 
+				</div> 
+			</div> 
+			<button class="btn"><i class="fa-solid fa-car"></i><span>Book ride to test</span> </button>
+			</div>
+	</div>
+	<script src="trail1.js"></script>
+<script>
+	let heroBg = document.querySelector('.hero');
+   
+	setInterval(() => {
+		heroBg.style.backgroundImage = "url(luca-david-HjXbVnnITvE-unsplash.jpg)"
+		
+		setTimeout(() => {
+			heroBg.style.backgroundImage = "url(luca-david-HjXbVnnITvE-unsplash.jpg)"
+		}, 1000);
+	}, 2200);
+
+	</script>
+
+</body>
+</html>
